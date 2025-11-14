@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <button class="btn top-left" data-time="30" data-audio="ssstik.io_1747538994858.mp3">0.5 min</button>
+    <button class="btn top-right" data-time="60" data-audio="ssstik.io_1747538673631.mp3">1 min</button>
+    <button class="btn bottom-left" data-time="300" data-audio="ssstik.io_1747546337542.mp3">5 min</button>
+    <button class="btn bottom-right" data-time="600" data-audio="ssstik.io_1747539751936.mp3">10 min</button>
+
+
+    <div class="timer" id="timer">00:00</div>
+    <img id="timer-gif" src="3ec3f945592921ba2f7dd5dc4ce5c341.gif" alt="timer gif">
+
+    <div class="controls">
+      <button id="pause-btn">⏸ Pause</button>
+      <button id="reset-btn">🔁 Reset</button>
+    </div>
+
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <!-- 提示音（結束用） -->
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+
+    <audio id="btn-music" preload="auto"></audio>
+
+  </div>
+
+  <button id="theme-toggle">🌙</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
